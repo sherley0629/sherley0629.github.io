@@ -1,48 +1,190 @@
 body {
+    margin: 0px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", SimSun, sans-serif;
 }
 
-.container {
-    width: 700px;
+.header{
+    background-color: rgba(255, 255, 255, 0.788);
+    height:80px;
+    position: fixed;
+    width: 100%;
+}
+
+.container{
     margin: 0 auto;
-    padding: 0px 0px 5px 0px;
-    background-image: linear-gradient( 135deg, #fed6e3 10%, #a8edea 100%)
+    width: 1100px
+}
+.left{
+    float: left;
+}
+
+#a{
+    width: 30px;
+    padding-top: 55px;
+    background-color: #3689d6
+}
+
+#b{
+    width: 910px;
+    margin-left: 20px;
+    padding-top: 25px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-style: oblique;
+    font-weight: bold
+}
+
+hr{
+    clear: both;
+    margin-top: 79px;
+    height: 1px;
+    background-color:rgb(231, 230, 230);
+    border: none
+}
+
+.main{
+    height: 340px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.circle{
+    margin-left: 488px;
+    height: 125px;
+    width:125px;
+    border-radius: 50%;
+    background-image: url(img/one.jpg);
 }
 
 h1 {
+    margin-top: 20px;
     text-align: center;
-    background-image: url(img/scene.jpg);
-    background-position: 50% 50%;
-    background-size: 450px 300px;
-    padding: 80px 0px 80px 40px;
-    color: white;
-    font-size: 50px;
-    font-family: '黑体'
+    color: #225280;
+    font-size: 30px;
+    font-family: 'Microsoft YaHei';
+    font-weight: lighter
 }
 
 table {
-    font-style: oblique;
+    font-style: initial;
     font-weight: bold;
     padding-left: 20px
 }
 
 h3 {
-    color: black;
-    padding-left: 10px
+    color: #225280;
+    padding-left: 10px;
+}
+
+h4{
+    text-align: center;
+    font-weight: lighter;
+}
+
+.english{
+    animation: change 3s;
+    text-align: center;
+    width: 150px;
+    height: 26px;
+    background-color: #6b97c9;
+    margin-left: 475px;
+}
+
+@keyframes change{
+    from{transform: rotate(0);}
+    to{transform: rotate(360deg);}
 }
 
 a:visited {
-    color: black;
-    padding-left: 10px;
-    text-decoration: none
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+    vertical-align: baseline
 }
 
 a:link {
-    color: black;
-    padding-left: 10px;
-    text-decoration: none
+    color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 
-a:hover {
-    color: #138fc9;
+.proposal{
+    transition: background-color 3s;
+    background-color: #f5f7fa;
+    height: 520px;
+}
+
+.proposal:hover{
+    background-color: #c0d4e9;
+}
+
+
+.basic{
+    float: left;
+    height: 330px;
+    width: 330px;
+    border-radius: 3%;
+    margin-top: 100px;
+    background-color: white;
+}
+
+#second{
+    margin-left: 40px;
+    padding-right: 15px
+}
+
+.basic>h4{
+    text-align: left;
+    padding-left: 15px;
+    font-size: 17px;
+}
+
+li{
+    text-align: left;
+    font-size: 17px;
+    margin-top: 10px
+}
+
+@media (max-width:960px){
+    .container{
+        width: 100%;
+    }
+
+    .main{
+        height: 230px;
+    }
+    #a{
+        display: none;
+    }
+
+    #b{
+        margin: 0 auto;
+        width: 100%;
+        text-align: center
+    }
+    
+    .circle{
+        display: none;
+    }
+
+    .english{
+        margin: 0 auto;
+    }
+
+    .proposal{
+        padding-top: 30px;
+        height: 1100px;
+    }
+
+    .basic{
+        float:none;
+        margin: 0 auto;
+        padding-right: 15px;
+    }
+
+    #second{
+        margin: 0 auto;
+        margin-top: 30px
+    }
+
+
 }
