@@ -53,7 +53,9 @@ hr{
     height: 125px;
     width:125px;
     border-radius: 50%;
-    background-image: url(img/one.jpg);
+    background-image: url(img/cer.jpg);
+    background-size: 100px, 100px;
+    background-position: 50%, 50%;
 }
 
 h1 {
